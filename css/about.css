@@ -2,11 +2,26 @@ section {
     padding: 15px;
   }
   
+  body{
+    background-color: #000;
+    background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+  }
+
   #page {
     min-height: 100vh !important;
     height: 100% !important;
   }
   
+  .link-container a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .link-container{
+    color: white;
+  }
+  
+
   .experince-header {
     position: relative;
     font-size: 42px;
@@ -14,7 +29,8 @@ section {
   }
   .experince-header-set {
     padding-right: 10px;
-    background: white;
+    background-color: black;
+    color: white;
   }
   
   .experince-alt {
@@ -86,7 +102,7 @@ section {
   .about-text {
     margin-bottom: 35px;
     margin-top: 35px;
-    color: #000;
+    color: #ffffff;
   }
   
   .skills-bar-about {
@@ -201,7 +217,7 @@ section {
     display: flex;
     top: 50%;
     left: 0;
-    background: #272a47;
+    background: black;
     height: 10%;
     width: 100%;
     z-index: -1;

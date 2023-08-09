@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+  font-family: "Work Sans", sans-serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+}
+.cards .card {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+.cards .card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.cards .card .image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.18s ease-in-out;
+}
+.cards .card .image img:hover {
+  transform: scale(1.08);
+}
+.cards .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.cards .card .title span {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.cards .card .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 25px 0px;
+}
+.cards .card .description p {
+  color: white;
+}
+.cards .card .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 25px;
+  list-style-type: none;
+}
+.cards .card .social ul li:not(:last-child) {
+  margin-right: 20px;
+}
+.cards .card .social ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.cards .card .social ul li a:link, .cards .card .social ul li a:visited {
+  color: white;
+}
+.cards .card .social ul li a:hover, .cards .card .social ul li a:active {
+  color: #858585;
+}
+
+.cards .card-3 {
+  min-width: 950px;
+  min-height: 300px;
+}
+.cards .card-3 .card-items {
+  margin: 25px;
+}
+.cards .card-3 .card-items .card-top-bar {
+  display: flex;
+  margin-bottom: 25px;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  min-height: 150px;
+  border-radius: 5%;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact ul {
+  list-style: none;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact ul li a {
+  margin: 5px;
+  color: white;
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact ul li a:link, .cards .card-3 .card-items .card-top-bar .card-contact ul li a:visited {
+  color: white;
+}
+.cards .card-3 .card-items .card-top-bar .card-contact ul li a:hover, .cards .card-3 .card-items .card-top-bar .card-contact ul li a:active {
+  color: #858585;
+}
+.cards .card-3 .card-items .card-top-bar .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.cards .card-3 .card-items .card-top-bar .card-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  transition: transform 250ms ease-in-out;
+}
+.cards .card-3 .card-items .card-top-bar .card-image img:hover {
+  transform: scale(1.12);
+}
+.cards .card-3 .card-items .card-top-bar .card-image p {
+  margin-top: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.cards .card-3 .card-items .card-top-bar .card-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  border-radius: 5%;
+}
+.cards .card-3 .card-items .card-top-bar .card-social ul {
+  list-style: none;
+}
+.cards .card-3 .card-items .card-top-bar .card-social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px;
+  transition: color 0.4s;
+}
+.cards .card-3 .card-items .card-top-bar .card-social ul li a:link, .cards .card-3 .card-items .card-top-bar .card-social ul li a:visited {
+  color: white;
+}
+.cards .card-3 .card-items .card-top-bar .card-social ul li a:hover, .cards .card-3 .card-items .card-top-bar .card-social ul li a:active {
+  color: #858585;
+}
+.cards .card-3 .card-items .card-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card-3 .card-items .card-bottom-bar .card-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 150px;
+  margin: 0 20px;
+}
+.cards .card-3 .card-items .card-bottom-bar .card-description p {
+  color: white;
+}
