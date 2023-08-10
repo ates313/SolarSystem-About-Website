@@ -11,11 +11,12 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Source+Code+Pro:ital,wght@0,400;1,200&family=Teko:wght@300;700&family=Tektur&display=swap"
         rel="stylesheet">
     <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+<div class="container-fluid">
     <div class="header">
         <div class="link-container">
             <div>SolarSystem
@@ -134,14 +135,55 @@
         </div>
     </div>
 
-    <canvas class="space" id="spaceCanvas"></canvas>
+    <!-- <div class="cutout-overlay"> -->
+        <div class="contain">
 
-    <div class="cutout-overlay">
-        
+            <div class="wrapper">
+
+                <div class="form">
+                    <h2 class="form-headline">Send us a message</h2>
+                    <form id="submit-form" action="">
+                        <p>
+                            <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p>
+                            <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p class="full-width">
+                            <input id="company-name" class="form-input" type="text" placeholder="Company Name*"
+                                required>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*"
+                                required></textarea>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                            <button class="reset-btn" onclick="reset()">Reset</button>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="contacts contact-wrapper">
+                    <ul>
+                        <span class="hightlight-contact-info">
+                            <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i><span class="highlight-text">ates.qurbanov06@gmail.com</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+994508881723</span></li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- </div> -->
 
 </body>
 
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+<script src="js/contact.js"></script>
