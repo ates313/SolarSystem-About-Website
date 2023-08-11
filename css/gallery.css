@@ -24,6 +24,7 @@ body{
     width: 350px;
     transform: scale(1);
     transition: transform 0.4s ease;
+    mix-blend-mode: lighten;
   }
 
   .link-container a {

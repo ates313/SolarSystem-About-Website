@@ -92,7 +92,7 @@ window.addEventListener("resize", handleThrottledResize);
 // Define the animation function for the elements with the "hover" class
 function animateHoverElements(elements) {
   elements.forEach((element) => {
-    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+    const tl = gsap.timeline({ repeat: -1, yoyo: true }); 
     const duration = Math.min(Math.max(Math.random() * 4, 1.3), 4);
     const distance = Math.min(Math.max(Math.random() * 50, 20), 80);
 

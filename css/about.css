@@ -5,6 +5,9 @@ section {
   body{
     background-color: #000;
     background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
 
   #page {
@@ -183,31 +186,31 @@ section {
 
   .html:hover{
     color: #E54D26FF;
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(134, 132, 132);
   }
 
   .css3:hover{
     color: #214CE5FF;
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(134, 132, 132);
   }
 
   .bootstrap:hover{
     color: #563B7DFF;
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(134, 132, 132);
   }
 
   .js:hover{
     color: #F7DF1EFF;
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(134, 132, 132);
   }
 
   .php:hover{
     color: rgb(97, 103, 192);
-    transition: 0.2s;
+    transition: 0.5s;
     background-color: rgb(134, 132, 132);
   }
 
